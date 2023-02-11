@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #0D2570; 
+    box-shadow: -5px 10px 15px rgb(102, 135, 242);
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.caixa-1 {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    background-color: orange;    
+    margin: 50px 100px;
+}
+
+form {
+    display: flex;
+
+}
+
+#botao1{
+    height: 25px;
+    width: 70px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+#botao1:hover{
+    
+}
+
+.caixa-2 {
+    display: inline-block;
+    position: relative;
+    background-color: red;
+    
+
+}
+
+#botao2{
+    height: 25px;
+    width: 70px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+#botao2:hover{
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0D2570;
+    color: white;
+    align-items: center;
+    box-shadow: -10px -5px 15px rgb(102, 135, 242);
+}
