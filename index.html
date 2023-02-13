@@ -7,38 +7,50 @@
         <title>Documento</title>
 
         <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <header>
             <h1>Cálculo de Folha de Pagamento</h1>
         </header>
+        <main>
+            <section class="caixa-1">
+                <form>
+                    <label for="input-salario">Salário Bruto</label>
+                    <input type="number" name="salario" id="input-salario">
 
-        <section class="caixa-1">
-            <form>
-                <label for="input-1">SALÁRIO BRUTO</label>
-                <input type="number" name="salario" id="input-1">
+                    <label for="input-dependentes">Dependentes</label>
+                    <input type="number" name="salario" id="input-dependentes">
+                    
+                    <div class="vale">
+                    <input type= "checkbox" name="checkbox" id="checkbox" checked>
+                    <label for="checkbox">Vale Transporte</label>
+                    </div>
 
-                <labe for="input-1">DEPENDENTES</label>
-                <input type="number" name="dependentes" id="input-2">
-                
-                <div class="checkbox'>
-                    <input type="checkbox" name="checkbox" id="checkbox" checked>
-                    <label for="checkbox">VALE TRANSPORTE</label>
-                </div>
-                <input id="botao1" type="submit" value="Calcular">
-            </form>
-        </section>
+                    <input id="botao1" type="submit" value="Calcular" onclick="calcular()">
+                </form>
+            </section>
 
-        <section class="caixa-2">
-            <p>RESULTADO:</p>
-            <input id="botao2" type="submit" value="Resetar">
-        </section>
-
+            <section class="caixa2">
+                <table>
+                    <p>Resultado:</p>
+                    <p id="salarioinicio">Salário Bruto: R$ </p>
+                    <p id="inss">INSS: R$ </p>
+                    <p id="irrf">IRRF: R$ </p>
+                    <p id="vt">Vale Transporte: R$ </p>
+                    <p id="bruto">Salário Líquido: R$ </p>
+                    <input id="botao2" type="submit" value="Resetar">
+                <table>
+            </section>
+        </main>
+        
         <footer>
-            <p>Todos os direitos reservados &copy; - Site zika das galáxias</p>
+            <span>Todos os direitos reservados &copy; - Site zika das galáxias</span>
         </footer>
-
     </body>
+    
 <script src="./js/Script.js"></script>
 </html>
