@@ -25,8 +25,8 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 30px;
-    
+    height: 100%;
+    width: 100%;    
 }
 
 .caixa-1 {
@@ -42,7 +42,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 75px 75px 200px;
+    margin: 75px 75px 0px;
     font-size: 20px;
     color: yellow;
     text-shadow: 1px 1px 1px black;
@@ -95,7 +95,21 @@ input {
     margin: 50px 0;
     width: 350px; 
     height: 450px;
+    align-items: center;
 }
+
+.tabelinha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 75px 0px;
+    font-size: 20px;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    gap: 30px;
+}
+
 
 #botao2{
     height: 50px;
@@ -125,4 +139,5 @@ footer {
     color: white;
     align-items: center;
     box-shadow: -10px -5px 15px rgb(102, 135, 242);
+    padding: 15px;
 }
