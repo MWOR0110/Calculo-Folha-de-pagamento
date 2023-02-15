@@ -19,11 +19,11 @@
         <main>
             <section class="caixa-1">
                 <form>
-                    <label for="input-salario">Salário Bruto</label>
+                    <label for="salario">Salário Bruto</label>
                     <input type="text" name="salario" id="salario" value=""/>
 
-                    <label for="input-dependentes">Dependentes</label>
-                    <input type="text" name="dependentes" id="input-dependentes"/>
+                    <label for="dependentes">Dependentes</label>
+                    <input type="text" name="dependentes" id="dependentes"/>
                     
                     <div class="vale">
                     <input type= "checkbox" name="checkbox" id="checkbox" checked/>
@@ -34,33 +34,15 @@
                 </form>
             </section>
 
-            <section class="caixa2">
-                <div class="tabelinha">
+            <section class="caixa2" id="visivel">
+                <div id="result">
                     <span>Resultado:</span>
-                    <table>
-                        <tr>
-                            <td>Salário Bruto: </td>
-                            <td id="salbruto">result</td>
-                        </tr>
-                        <tr>
-                            <td>INSS: </td>
-                            <td id="inss">result</td>
-                        </tr>
-                        <tr>
-                            <td>IRRF: </td>
-                            <td id="irrf">result</td>
-                        </tr>
-                        <tr>
-                            <td>Vale Transporte: </td>
-                            <td id="vt">result</td>
-                        </tr>
-                        <tr>
-                            <td>Salário Líquido: </td>
-                            <td id="salfinal">result</td>
-                        </tr>
-                    </table>
-                    <input id="botao2" type="submit" value="Resetar">
-            </div>
+                    <span id="tabelinha">
+                        
+                    </span>
+                    <br>
+                    <input id="botao2" type="submit" onClick="window.location.href=window.location.href" value="Resetar">
+                </div>
             </section>
         </main>
         
@@ -68,6 +50,5 @@
             <span>Todos os direitos reservados &copy; - Site zika das galáxias</span>
         </footer>
     </body>
-    
     <script src="./js/Script.js"></script>
 </html>

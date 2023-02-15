@@ -96,6 +96,19 @@ input {
     width: 350px; 
     height: 450px;
     align-items: center;
+    display: none;
+}
+
+.visivel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.50); 
+    border-radius: 50px;
+    margin: 50px 0;
+    width: 350px; 
+    height: 450px;
+    align-items: center
 }
 
 .tabelinha{
@@ -138,6 +151,7 @@ footer {
     background-color: #0D2570;
     color: white;
     align-items: center;
-    box-shadow: -10px -5px 15px rgb(102, 135, 242);
+    box-shadow: 5px -10px 15px 5px rgb(255, 0, 0);
     padding: 15px;
 }
+
